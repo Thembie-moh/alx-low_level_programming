@@ -12,16 +12,16 @@
 	printf(" % d\n", nb);
 	nb = atoi(" - 402");
 	printf(" % d\n", nb);
-	nb = atoi("		------ ++++++ ----- +++++-- 98");
+	nb = atoi("------++++++-----+++++--98");
 	printf(" % d\n", nb);
-	nb = atoi("214748364");
+	nb = atoi("2147483647");
 	printf(" % d\n", nb);
 	nb = atoi("0");
 	nb = atoi("suite 402");
 	printf(" % d\n", nb);
 	nb = atoi("+ + - - 98 Battery Street; San Francisco, CA 94111 -USA");
 		printf(" % d\n", nb);
-		nb = atoi("---++++ - +Sui - te - 402 #cisfun :)");
+		nb = atoi("---++++ -++ Sui - te - 402 #cisfun :)");
 		printf(" % d\n", nb);
 		return (0);
 }
