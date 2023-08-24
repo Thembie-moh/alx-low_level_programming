@@ -7,6 +7,7 @@
 int main(void)
 {
 	int i;
+
 	unsigned ling int j, k, next, sum;
 
 	j = 1;
