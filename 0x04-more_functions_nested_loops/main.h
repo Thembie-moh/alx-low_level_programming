@@ -7,4 +7,5 @@ int mul(int a, int b);
 void print_square(int size);
 int _putchar(char c);
 void print_diagonal(int n);
+void print_line(int n);
 #endif
