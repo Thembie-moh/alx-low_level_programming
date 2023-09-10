@@ -4,32 +4,21 @@
  */
 void times_table(void)
 {
-	int i, j, k;
+	int u, z, outcome;
 
-	for (i = 0; i < 10; i++)
+	for (u = 0; u < 10; u++)
 	{
-		for (j = 0; j < 10; j++)
-
-			k = j * i;
-			if (j == 0)
+		for (z = 0; z < 10; z++)
+		{
+			outcome = u * z;
+			if (z == 0)
+				printf("%d, ", outcome);
+			else
 			{
-				_putchar(k + '0');
+				printf("%2d", outcome);
 			}
-
-			if (k < 10 && j != 0)
-			}
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
-			} else if (k >= 10)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
-			}
+			printf("%2d, ", outcome);
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
