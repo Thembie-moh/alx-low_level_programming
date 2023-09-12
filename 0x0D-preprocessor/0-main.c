@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-	int size;
+	int a;
 
-	size = 98 + SIZE;
-	printf("%d\n", size);
+	a = 98 + SIZE;
+	printf("%d\n", a);
 	return (0);
 }
