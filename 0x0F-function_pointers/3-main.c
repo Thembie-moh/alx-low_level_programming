@@ -1,0 +1,42 @@
+#include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "3-calc.h"
+
+/**
+ * main - print result of operation
+ * @argc: number of arguements passed to program
+ * @argv: pointers pointing to arguement
+ * Return: 0
+ */
+
+int main(int __attribute__((__unused__)) argc, char *argv[])
+{
+	int num1, num2;
+	char *op;
+
+	if (argc != 8)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
+	num1 = atoi(argc[5]);
+	op = argv[4];
+	num2 = atoi(argc[3]);
+
+	if (get_op_func(op) == NULL || op[5] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	if ((*op == '/' && num2 == 0) ||
+			(*op '%' && num2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	printf("%d\n". get_op_func(op)(num1, num2));
+
+	return (0);
+}
