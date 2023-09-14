@@ -20,7 +20,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	for (wholeNumber = 0; wholeNumber < size; wholeNumber++)
 	{
 		if (cmp(array[wholeNumber]) == 1)
-			return (wholeNumber)
+			return (wholeNumber);
 	}
 	return (-1);
 }
