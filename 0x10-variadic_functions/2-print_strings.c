@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 /**
  * print_strings - function prints a number of strings
@@ -7,7 +9,7 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned in y;
+	unsigned int y;
 	char *str;
 
 	va_list catalogue;
@@ -17,14 +19,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (y = 0; y < n; y++)
 	{
 		str = va_arg(catalogue, char *);
-		if (!str)
-			str = "nil";
+		if (str == NULL)
+			printf("(nil)");
 		if (!separator)
 			printf("%s", str);
-		else if (seprator && y == 0)
-			printf("%s", str);
 		else
-			printf("%s%s", separator, str);
+			printf("%s", str);
+		if (y != (n-1) && separator != NULL)
+			printf("%s", separator);
 	}
 	printf("\n");
 	va_end(catalogue);
