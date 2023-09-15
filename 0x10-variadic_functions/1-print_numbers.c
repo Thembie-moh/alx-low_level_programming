@@ -5,12 +5,12 @@
  * @separator: numbers that are to be printed between string
  * @n: arguements to be counted
  */
-void print_number(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int y;
 	va_list argmnt;
 
-	va_start(argmnt, y);
+	va_start(argmnt, n);
 	for (y = 0; y < n; y++)
 	{
 		if (separator != NULL)
@@ -22,6 +22,6 @@ void print_number(const char *separator, const unsigned int n, ...)
 		else
 	printf("%d", va_arg(argmnt, int));
 	}
-	printf('\n');
+	putchar('\n');
 	va_end(argmnt);
 }
