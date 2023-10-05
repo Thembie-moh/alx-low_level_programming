@@ -12,16 +12,16 @@ char *_strdup(char *str)
 	char *bbb;
 	int y, t = 0;
 
-	if (string == NULL)
+	if (str == NULL)
 		return (NULL);
 	y = 0;
-	while (string[y] != '\0')
+	while (str[y] != '\0')
 		y++;
 	bbb = malloc(sizeof(char) * (y + 1));
 	if (bbb == NULL)
 		return (NULL);
-	for (r = 0; string[t]; t++)
-		bbb[t] = string[t];
+	for (t = 0; str[t]; t++)
+		bbb[t] = str[t];
 	return (bbb);
 }
 
