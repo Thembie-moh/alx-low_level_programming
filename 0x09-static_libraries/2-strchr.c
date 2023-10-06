@@ -2,22 +2,19 @@
 #include <stddef.h>
 
 /**
- * 2-strchr. c - locates character of string
- * @s: string to search
- * @c: character to search
- * @NULL: return
- * Return: s or NULL
+ * _strchr - The librarys entry point
+ * @s: The input
+ * @c: The input
+ * Return: When the function succeeds print 0
  */
-
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int x = 0;
+
+	for (; s[x] >= '\0'; x++)
 	{
-		if (*s == c)
-			return (s);
-		s++;
+		if (s[x] == c)
+			return (&s[z]);
 	}
-	if (*s == c)
-		return (s);
-	return (NULL);
+	return (0);
 }
