@@ -1,20 +1,18 @@
 #ifndef PUPPY_H
 #define PUPPY_H
 
+
 /**
- * struct my_puppy - definition of puppy structure
- * @dogName: name of my puppy
- * @dogOwner: name of puppy owner
- * @dogAge: age of dog
+ * struct puppy - definition of puppy structure
+ * @Name: name of my puppy
+ * @Owner: name of puppy owner
+ * @Age: age of dog
  * Return: 0
  */
-typedef struct my_puppy
+struct puppy 
 {
-	char *dogName;
-	float dogAge;
-	char *dogOwner;
-} dog_t;
-void init_dog(struct my_puppy *d, char *dogName, float dogAge, char *dogOwner);
-void print_dog(struct my_puppy *d);
-
+	char *Name;
+	float Age;
+	char *Owner;
+};
 #endif
