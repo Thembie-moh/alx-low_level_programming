@@ -5,7 +5,7 @@
  * @n: the int
  * return: int and node
  */
-listint_t *add_nodeint_end(listint_t **head, const int n);
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *newest, *last1;
 
@@ -21,9 +21,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n);
 	{
 		last1 = *head;
 		while (last1->next != NULL)
-			last1 = last1-next;
-		last->next = new;
+			last1 = last1->next;
+		last1->next = newest;
 	}
 	return (*head);
 }
-
