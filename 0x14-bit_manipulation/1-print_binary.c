@@ -1,32 +1,46 @@
 #include "main.h"
 
 /**
- * binary_to_uint - function needs to convert binary numbers to an unsigned int
- * @b: This is a pointer to a string that will contain the binary numbers.
- *
- * Return: The unsigned integer with a decimal value
+ * _power - Function prints binary represenatation of a number
+ * @b: The exponent base
+ * @p: exponent power
+ * Return: The value of the power to the base
  */
-
-unsigned int binary_to_uint(const char *b)
+unsigned long int _power(unsigned int b, unsigned int p)
 {
-	int r;
-	unsigned int number;
+	unsigned long int number;
+	unsigned int a;
 
-	number = 0;
-	if (!r)
-	return (0);
-		for (r = 0; b[r] != '\0'; r++)
-
-	{
-
-			if (r[b] != '0' && r[b] != '1')
-				return (0);
-	}
-		for (r = 0; r[b] != '\0'; r++)
-	{
-			number <<= 1;
-			if (a[r] == '1')
-			number += 1;
-	}
+	number = 1;
+	for (a = 1; a <= p; a++)
+		number *= b;
 	return (number);
+}
+
+/**
+ * print_binary - Notation of the binary numbers to be printed
+ * @num: numerical value to be printed
+ * Return: NULL
+ */
+void print_binary(unsigned long int num)
+{
+	unsigned long int checker, antchecker;
+	char flagged;
+
+	flagged = 0;
+	antchecker = _power(2, sizeof(unsigned long int) * 8 - 1);
+	while (checker != 0)
+	{
+		checker = num & checker;
+		if (antchecker == checker)
+		{
+			flagged = 1;
+			_putchar('1');
+		}
+		else if (flagged == 1 || checker == 1)
+		{
+			_putchar('0');
+		}
+		checker >>= 1;
+	}
 }
