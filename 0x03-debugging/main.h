@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 void positive_or_negative(int i);
-int lagest_number(int a, int b, int c);
+int largest_number(int a, int b, int c);
 int convert_day(int mont, int day);
 void print_remaining_days(int mont, int day, int year);
 #endif
