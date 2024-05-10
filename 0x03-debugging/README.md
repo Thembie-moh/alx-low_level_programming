@@ -1,1 +1,15 @@
 0x03-debugging
+Using the Rubber Duck Method, here I am going to debug a number of functions based on stipulated instructions
+
+Task 0
+This will  test that the function positive_or_negative() gives the correct output when given a case is 0
+
+Task 1
+This function will comment out a part of the code that causes the code to go into a loop
+
+Task 2
+This fuction is supposed to make sure it prints out the largets of three numbers no matter the case 
+
+Task 3
+The function has to count the number of days left in a year and has to consider leap year in the counting.
+
