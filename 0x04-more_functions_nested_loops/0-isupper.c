@@ -2,7 +2,7 @@
 /**
  * _isupper -The function will check if the letter is uppercase
  * @x: The number that will be checked by the function
- * Return: For upper case print 1 or 0 for lowercase 
+ * Return: 1 if c is uppercase
  */
 int _isupper(int x)
 {
